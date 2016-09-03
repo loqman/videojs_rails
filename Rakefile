@@ -24,10 +24,10 @@ namespace :videojs do
       # Copy files into our Rails structure
       puts
       puts "* Copying files to vendor/assets"
-      sh "cp #{VIDEO_JS_HOME}/dist/video-js/font/* #{VIDEO_JS_RAILS_HOME}/vendor/assets/fonts/"
-      sh "cp #{VIDEO_JS_HOME}/dist/video-js/video-js.css #{VIDEO_JS_RAILS_HOME}/vendor/assets/stylesheets/"
-      sh "cp #{VIDEO_JS_HOME}/dist/video-js/video-js.swf #{VIDEO_JS_RAILS_HOME}/vendor/assets/javascripts/"
-      sh "cp #{VIDEO_JS_HOME}/dist/video-js/video.dev.js #{VIDEO_JS_RAILS_HOME}/vendor/assets/javascripts/"
+      sh "cp #{VIDEO_JS_HOME}/dist/font/* #{VIDEO_JS_RAILS_HOME}/vendor/assets/fonts/"
+      sh "cp #{VIDEO_JS_HOME}/dist/video-js.css #{VIDEO_JS_RAILS_HOME}/vendor/assets/stylesheets/"
+      sh "cp #{VIDEO_JS_HOME}/dist/video-js.swf #{VIDEO_JS_RAILS_HOME}/vendor/assets/javascripts/"
+      sh "cp #{VIDEO_JS_HOME}/dist/video.js #{VIDEO_JS_RAILS_HOME}/vendor/assets/javascripts/video.dev.js"
 
       # Now, perform some asset_path and other substitutions
       puts
